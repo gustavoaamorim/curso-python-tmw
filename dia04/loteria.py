@@ -1,3 +1,5 @@
+import random
+
 def entrada_usuario(msg):
     """
     Validação de entrada do usuário para garantir que é um número e não uma string
@@ -10,7 +12,7 @@ def entrada_usuario(msg):
         except ValueError as err:
             print('Entre com um valor válido!\n')
 
-sorte = 7
+sorte = random.randint(1, 15)
 
 # definindo um range com 3 tentativas de acerto
 for i in range(3):
@@ -25,4 +27,4 @@ for i in range(3):
         break
 
 else:
-    print('Acabaram suas tentativas!')
+    print(f'Acabaram suas tentativas! O número correto é {sorte}')
