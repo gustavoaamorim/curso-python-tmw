@@ -1,0 +1,1 @@
+Este é meu arquivo de texto usando os métodos open, write e close.
